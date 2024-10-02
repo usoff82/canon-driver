@@ -245,7 +245,7 @@ exit 0' > /etc/init.d/ccpd
 	echo 'Установка 32-битных библиотек необходимых для'
 	echo '64-разрядной версии драйвера принтера'
 	if [ $ARCH == 'amd64' ]; then
-		apt-get -y install libatk1.0-0:i386 libcairo2:i386 libgtk2.0-0:i386 libpango1.0-0:i386 libstdc++6:i386 libpopt0:i386 libxml2:i386 libc6:i386
+		apt-get -y install libatk1.0-0:i386 libcairo2:i386 libgtk2.0-0:i386 libstdc++6:i386 libpopt0:i386 libxml2:i386 libc6:i386
 		check_error PACKAGE $?
 	fi
 	echo 'Установка принтера в CUPS'
